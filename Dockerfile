@@ -18,4 +18,4 @@ RUN cd / && \
 
 EXPOSE 8090
 
-CMD cd /atlassian-confluence-${CONFLUENCE_PV}/bin && ./start-confluence.sh -fg
+CMD cd /atlassian-confluence-${CONFLUENCE_PV}/bin && exec ./start-confluence.sh -fg
